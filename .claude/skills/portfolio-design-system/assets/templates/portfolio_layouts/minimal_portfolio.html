@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Developer Portfolio</title>
+    <meta name="description" content="Clean, minimal portfolio showcasing development work">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ['class', '[data-theme="dark"]'],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    },
+                    colors: {
+                        gray: {
+                            50: '#f9fafb',
+                            100: '#f3f4f6',
+                            200: '#e5e7eb',
+                            300: '#d1d5db',
+                            400: '#9ca3af',
+                            500: '#6b7280',
+                            600: '#4b5563',
+                            700: '#374151',
+                            800: '#1f2937',
+                            900: '#111827'
+                        },
+                        accent: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8'
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-lg font-medium">JD.</a>
+                <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme">
+                    <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg class="w-5 h-5 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero -->
+        <section class="min-h-screen flex items-center justify-center px-6">
+            <div class="max-w-4xl w-full text-center">
+                <h1 class="text-5xl md:text-7xl font-light mb-6 animate-fade-in">
+                    Hi, I'm <span class="font-medium">John Doe</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 animate-fade-in" style="animation-delay: 0.2s">
+                    Full‑stack developer crafting clean, scalable web experiences
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style="animation-delay: 0.4s">
+                    <a href="#work" class="px-8 py-3 bg-accent-600 text-white rounded-lg hover:bg-accent-700 transition-colors">
+                        View my work
+                    </a>
+                    <a href="#contact" class="px-8 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-24 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-medium mb-8 text-center">About</h2>
+                <div class="prose prose-lg prose-gray dark:prose-invert max-w-none text-center">
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        I build thoughtful digital experiences with a focus on clean code, user‑centric design, and modern web technologies.
+                        Currently working with React, Node.js, and cloud platforms to create applications that scale.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section id="work" class="py-24 px-6 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-medium mb-16 text-center">Selected Work</h2>
+
+                <div class="space-y-16">
+                    <!-- Project 1 -->
+                    <article class="animate-slide-up">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-2xl font-medium mb-4">E‑Commerce Platform</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                                    Full‑featured online store with real‑time inventory, payment processing, and admin dashboard.
+                                    Built with performance and scalability in mind.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">React</span>
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">Node.js</span>
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">PostgreSQL</span>
+                                </div>
+                                <div class="flex gap-4">
+                                    <a href="#" class="text-accent-600 hover:underline font-mono text-sm">Live →</a>
+                                    <a href="#" class="text-accent-600 hover:underline font-mono text-sm">Code →</a>
+                                </div>
+                            </div>
+                            <div class="bg-gray-200 dark:bg-gray-700 rounded-lg aspect-video flex items-center justify-center">
+                                <span class="text-gray-500 dark:text-gray-400">Project Screenshot</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="animate-slide-up" style="animation-delay: 0.2s">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div className="order-2 md:order-1">
+                                <div class="bg-gray-200 dark:bg-gray-700 rounded-lg aspect-video flex items-center justify-center">
+                                    <span class="text-gray-500 dark:text-gray-400">Project Screenshot</span>
+                                </div>
+                            </div>
+                            <div className="order-1 md:order-2">
+                                <h3 class="text-2xl font-medium mb-4">Task Management System</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                                    Collaborative project management tool with real‑time updates, drag‑and‑drop interface,
+                                    and team collaboration features.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">Vue.js</span>
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">Express</span>
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">MongoDB</span>
+                                </div>
+                                <div class="flex gap-4">
+                                    <a href="#" class="text-accent-600 hover:underline font-mono text-sm">Live →</a>
+                                    <a href="#" class="text-accent-600 hover:underline font-mono text-sm">Code →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="animate-slide-up" style="animation-delay: 0.4s">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-2xl font-medium mb-4">Weather Dashboard</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                                    Interactive weather application with location‑based forecasts, historical data visualization,
+                                    and customizable alert system.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">JavaScript</span>
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">API Integration</span>
+                                    <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-md text-sm">Chart.js</span>
+                                </div>
+                                <div class="flex gap-4">
+                                    <a href="#" class="text-accent-600 hover:underline font-mono text-sm">Live →</a>
+                                    <a href="#" class="text-accent-600 hover:underline font-mono text-sm">Code →</a>
+                                </div>
+                            </div>
+                            <div class="bg-gray-200 dark:bg-gray-700 rounded-lg aspect-video flex items-center justify-center">
+                                <span class="text-gray-500 dark:text-gray-400">Project Screenshot</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="py-24 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-medium mb-16 text-center">Skills & Technologies</h2>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-lg font-medium mb-6">Frontend</h3>
+                        <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                            <li>React / Next.js</li>
+                            <li>Vue.js / Nuxt.js</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS / Sass</li>
+                            <li>HTML5 / CSS3</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-medium mb-6">Backend</h3>
+                        <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                            <li>Node.js / Express</li>
+                            <li>Python / Django</li>
+                            <li>PostgreSQL / MongoDB</li>
+                            <li>Redis / GraphQL</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-12 border-t border-gray-200 dark:border-gray-700">
+                    <h3 class="text-lg font-medium mb-6">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-md text-sm">Git</span>
+                        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-md text-sm">Docker</span>
+                        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-md text-sm">AWS</span>
+                        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-md text-sm">CI/CD</span>
+                        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-md text-sm">Jest</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-24 px-6 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-medium mb-8">Let's Connect</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-12 text-lg">
+                    I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
+                </p>
+
+                <div class="space-y-6">
+                    <a href="mailto:hello@johndoe.com" class="block px-8 py-4 bg-accent-600 text-white rounded-lg hover:bg-accent-700 transition-colors">
+                        hello@johndoe.com
+                    </a>
+
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                            LinkedIn
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-4xl mx-auto px-6 py-8">
+            <p class="text-center text-gray-500 dark:text-gray-500 text-sm">
+                © 2024 John Doe. Built with care and attention to detail.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme handling
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

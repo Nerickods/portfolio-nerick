@@ -1,0 +1,350 @@
+{
+  "portfolio_templates": {
+    "homepage": {
+      "title": "{name} | {title} in {location}",
+      "description": "{experience} {title} specializing in {technologies}. {bio} Available for {work_type} in {location}.",
+      "keywords": "{title}, {technologies}, {location}, developer, software engineer",
+      "og_title": "{name} | {title} | {technologies}",
+      "og_description": "{experience} {title} with expertise in {technologies}. {bio}",
+      "twitter_title": "{name} - {title} in {location}",
+      "twitter_description": "{experience} {title} specializing in {technologies}. Available for opportunities."
+    },
+    "project_page": {
+      "title": "{project_name} - {project_type} by {name}",
+      "description": "Built {project_name} using {technologies}. {project_description} {project_impact}",
+      "keywords": "{project_name}, {technologies}, {project_type}, portfolio, {name}",
+      "og_title": "{project_name} - {project_type} Project",
+      "og_description": "{project_description} Built with {technologies}.",
+      "twitter_title": "Check out {project_name} - {project_type}",
+      "twitter_description": "{project_description} Built with {technologies}."
+    },
+    "about_page": {
+      "title": "About {name} - {title}",
+      "description": "Learn about {name}, {title} with {years} experience in {technologies}. {bio} {location}.",
+      "keywords": "about, {name}, {title}, {technologies}, {location}, experience, skills",
+      "og_title": "About {name} - {title}",
+      "og_description": "{experience} {title} with expertise in {technologies} based in {location}.",
+      "twitter_title": "About {name} - {title}",
+      "twitter_description": "{experience} {title} specializing in {technologies}."
+    },
+    "contact_page": {
+      "title": "Contact {name} - {title}",
+      "description": "Get in touch with {name}, {title} in {location}. Available for {work_type}. {contact_methods}",
+      "keywords": "contact, {name}, {title}, {location}, hire, {work_type}, email, phone",
+      "og_title": "Contact {name} - {title}",
+      "og_description": "{name} is available for {work_type} in {location}. Contact for opportunities.",
+      "twitter_title": "Contact {name} - {title}",
+      "twitter_description": "{name} is available for {work_type} in {location}. Get in touch for opportunities."
+    }
+  },
+  "title_patterns": {
+    "primary": [
+      "{name} | {title} in {location}",
+      "{name} - {title} | {technologies}",
+      "{title} | {name} | {specialization}",
+      "{name} | {technologies} Developer | {location}",
+      "{title} & {technologies} | {name} | Portfolio"
+    ],
+    "experience_focused": [
+      "{experience} {title} | {name} | {technologies}",
+      "{title} with {years} experience | {name}",
+      "{experience} {technologies} Developer | {name}",
+      "{name} - {experience} {title} | {location}"
+    ],
+    "location_focused": [
+      "{title} in {location} | {name}",
+      "{name} | {location} | {title}",
+      "{location} {title} | {name}",
+      "{title} | San Francisco Bay Area | {name}"
+    ],
+    "technology_focused": [
+      "{name} | {technologies} Developer",
+      "{technologies} Expert | {name}",
+      "{name} - {technologies} Specialist",
+      "{technologies} Developer | {name} | Portfolio"
+    ]
+  },
+  "description_patterns": {
+    "comprehensive": [
+      "{experience} {title} specializing in {technologies}. {bio} Available for {work_type} in {location}.",
+      "Skilled {title} with {years} years experience in {technologies}. {bio} Located in {location}, seeking {opportunities}.",
+      "{experience} {title} creating {achievements} using {technologies}. {bio} {location-based}.",
+      "Passionate {title} with expertise in {technologies}. {bio} {call_to_action} from {location}.",
+      "{title} focused on {specialization} with strong skills in {technologies}. {bio} {location}."
+    ],
+    "concise": [
+      "{experience} {title} specializing in {technologies}. Available for {work_type} in {location}.",
+      "Skilled {title} with {years} years experience in {technologies}. Based in {location}.",
+      "{experience} {title} creating innovative solutions with {technologies}. {location}."
+    ],
+    "achievement_focused": [
+      "{experience} {title} with track record of {achievements}. Expert in {technologies}. Available in {location}.",
+      "Built {project_count} applications using {technologies}. {experience} {title} seeking {work_type}.",
+      "Led development of {key_projects} using {technologies}. {experience} {title} in {location}."
+    ]
+  },
+  "keyword_combinations": {
+    "primary": [
+      "{title}",
+      "{technologies} developer",
+      "{technologies} engineer",
+      "software developer",
+      "web developer",
+      "full stack developer"
+    ],
+    "experience": [
+      "{experience} developer",
+      "{experience} engineer",
+      "senior developer",
+      "junior developer",
+      "lead developer"
+    ],
+    "location": [
+      "developer {location}",
+      "{title} {location}",
+      "{location} software engineer",
+      "remote developer"
+    ],
+    "technology": [
+      "{tech1} developer",
+      "{tech2} developer",
+      "{tech1} {tech2} developer",
+      "full stack {tech1} developer"
+    ],
+    "industry": [
+      "{industry} developer",
+      "startup developer",
+      "enterprise developer",
+      "freelance developer"
+    ]
+  },
+  "og_templates": {
+    "website": {
+      "og_type": "website",
+      "og_site_name": "{name}'s Portfolio",
+      "og_locale": "en_US",
+      "og_image_width": "1200",
+      "og_image_height": "630"
+    },
+    "article": {
+      "og_type": "article",
+      "og_site_name": "{name}'s Portfolio",
+      "og_locale": "en_US",
+      "article_section": "Projects",
+      "article_tag": "{technologies}"
+    },
+    "profile": {
+      "og_type": "profile",
+      "profile_first_name": "{first_name}",
+      "profile_last_name": "{last_name}",
+      "profile_username": "{username}"
+    }
+  },
+  "twitter_templates": {
+    "summary_large_image": {
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@{twitter_handle}",
+      "twitter_creator": "@{twitter_handle}"
+    },
+    "summary": {
+      "twitter_card": "summary",
+      "twitter_site": "@{twitter_handle}",
+      "twitter_creator": "@{twitter_handle}"
+    }
+  },
+  "structured_data_templates": {
+    "person": {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{name}",
+      "jobTitle": "{title}",
+      "description": "{description}",
+      "url": "{url}",
+      "knowsAbout": ["{technologies}"],
+      "sameAs": ["{social_profiles}"]
+    },
+    "project": {
+      "@context": "https://schema.org",
+      "@type": "Project",
+      "name": "{project_name}",
+      "description": "{project_description}",
+      "url": "{project_url}",
+      "programmingLanguage": ["{technologies}"],
+      "creator": {
+        "@type": "Person",
+        "name": "{name}"
+      }
+    },
+    "website": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{name}'s Portfolio",
+      "url": "{url}",
+      "description": "{description}",
+      "author": {
+        "@type": "Person",
+        "name": "{name}"
+      }
+    }
+  },
+  "specialized_templates": {
+    "fintech_developer": {
+      "title": "{name} | FinTech {title} | {technologies}",
+      "description": "Experience FinTech {title} building {fintech_products} using {technologies}. {bio} Available for {work_type} in {location}.",
+      "keywords": "fintech developer, {fintech_keywords}, {title}, {technologies}",
+      "industry_specific": "financial technology, banking software, payment processing, trading platforms"
+    },
+    "healthtech_developer": {
+      "title": "{name} | HealthTech {title} | {technologies}",
+      "description": "HealthTech {title} with expertise in {healthtech_solutions}. {bio} Building {medical_applications} with {technologies}.",
+      "keywords": "healthtech developer, healthcare software, {title}, {technologies}",
+      "industry_specific": "healthcare software, medical applications, telehealth, HIPAA compliance"
+    },
+    "ecommerce_developer": {
+      "title": "{name} | E-commerce {title} | {technologies}",
+      "description": "E-commerce {title} specializing in {ecommerce_platforms}. {bio} Built {shopping_solutions} using {technologies}.",
+      "keywords": "ecommerce developer, {ecommerce_keywords}, {title}, {technologies}",
+      "industry_specific": "e-commerce, shopping carts, payment gateways, retail technology"
+    },
+    "startup_developer": {
+      "title": "{name} | Startup {title} | {technologies}",
+      "description": "Startup-focused {title} with experience building {startup_products}. {bio} Expert in rapid development with {technologies}.",
+      "keywords": "startup developer, {title}, {technologies}, early stage, venture backed",
+      "industry_specific": "startup, MVP development, rapid prototyping, venture capital"
+    },
+    "senior_developer": {
+      "title": "{name} | Senior {title} | {technologies}",
+      "description": "Senior {title} with {years} years experience. {bio} Led {leadership_projects} using {technologies}.",
+      "keywords": "senior developer, lead developer, {title}, {technologies}, team lead",
+      "experience_focus": "senior, lead, principal, architect, team management"
+    },
+    "remote_developer": {
+      "title": "{name} | Remote {title} | {technologies}",
+      "description": "Remote {title} with {years} experience in distributed teams. {bio} Available for remote {work_type} globally.",
+      "keywords": "remote developer, work from home, {title}, {technologies}, distributed",
+      "location_focus": "remote, worldwide, location independent, digital nomad"
+    }
+  },
+  "location_templates": {
+    "united_states": {
+      "san_francisco": {
+        "title": "{name} | {title} in San Francisco",
+        "description": "San Francisco-based {title} with {years} years experience. {bio} Available for {work_type} in SF Bay Area.",
+        "location_keywords": "san francisco developer, bay area developer, silicon valley developer"
+      },
+      "new_york": {
+        "title": "{name} | {title} in New York",
+        "description": "New York {title} specializing in {technologies}. {bio} Available for {work_type} in NYC area.",
+        "location_keywords": "new york developer, nyc developer, manhattan developer"
+      },
+      "austin": {
+        "title": "{name} | {title} in Austin",
+        "description": "Austin-based {title} with expertise in {technologies}. {bio} Available for {work_type} in Texas.",
+        "location_keywords": "austin developer, texas developer, austin tech"
+      },
+      "seattle": {
+        "title": "{name} | {title} in Seattle",
+        "description": "Seattle {title} specializing in {technologies}. {bio} Available for {work_type} in Pacific Northwest.",
+        "location_keywords": "seattle developer, pacific northwest developer, washington tech"
+      }
+    },
+    "international": {
+      "london": {
+        "title": "{name} | {title} in London",
+        "description": "London-based {title} with {years} experience in {technologies}. {bio} Available for {work_type} in UK.",
+        "location_keywords": "london developer, uk developer, fintech developer london"
+      },
+      "toronto": {
+        "title": "{name} | {title} in Toronto",
+        "description": "Toronto {title} specializing in {technologies}. {bio} Available for {work_type} in Canada.",
+        "location_keywords": "toronto developer, canadian developer, tech hub toronto"
+      },
+      "berlin": {
+        "title": "{name} | {title} in Berlin",
+        "description": "Berlin-based {title} with expertise in {technologies}. {bio} Available for {work_type} in Germany.",
+        "location_keywords": "berlin developer, german developer, startup scene berlin"
+      }
+    }
+  },
+  "technical_templates": {
+    "react_developer": {
+      "title": "{name} | React Developer | {location}",
+      "description": "Experienced React Developer with {years} years building {react_applications}. {bio} Expert in React, TypeScript, and modern frontend.",
+      "keywords": "react developer, react.js developer, frontend developer, {location}",
+      "tech_focus": "react, typescript, next.js, redux, frontend"
+    },
+    "nodejs_developer": {
+      "title": "{name} | Node.js Developer | {location}",
+      "description": "Node.js Developer specializing in {backend_applications}. {bio} Built {nodejs_projects} using Node.js and modern JavaScript.",
+      "keywords": "node.js developer, backend developer, javascript developer, {location}",
+      "tech_focus": "node.js, express, javascript, typescript, api development"
+    },
+    "python_developer": {
+      "title": "{name} | Python Developer | {location}",
+      "description": "Python Developer with expertise in {python_applications}. {bio} Experienced in Django, Flask, and data science applications.",
+      "keywords": "python developer, django developer, flask developer, {location}",
+      "tech_focus": "python, django, flask, data science, backend"
+    },
+    "fullstack_developer": {
+      "title": "{name} | Full Stack Developer | {location}",
+      "description": "Full Stack Developer with experience in {frontend_tech} and {backend_tech}. {bio} Built {fullstack_projects} end-to-end.",
+      "keywords": "full stack developer, full stack engineer, {technologies}, {location}",
+      "tech_focus": "full stack, mern, mean, javascript, python, databases"
+    },
+    "devops_engineer": {
+      "title": "{name} | DevOps Engineer | {location}",
+      "description": "DevOps Engineer specializing in {devops_tools}. {bio} Expert in cloud infrastructure, CI/CD, and automation.",
+      "keywords": "devops engineer, devops developer, {devops_keywords}, {location}",
+      "tech_focus": "aws, docker, kubernetes, ci/cd, infrastructure"
+    }
+  },
+  "variables": {
+    "required": [
+      "name",
+      "title",
+      "technologies",
+      "location"
+    ],
+    "optional": {
+      "personal": [
+        "experience",
+        "years",
+        "bio",
+        "email",
+        "phone",
+        "github",
+        "linkedin",
+        "twitter"
+      ],
+      "professional": [
+        "work_type",
+        "available_for_hire",
+        "achievements",
+        "project_count",
+        "leadership_projects"
+      ],
+      "technical": [
+        "frontend_tech",
+        "backend_tech",
+        "databases",
+        "cloud_platforms",
+        "devops_tools"
+      ],
+      "industry": [
+        "industry",
+        "fintech_products",
+        "healthtech_solutions",
+        "ecommerce_platforms",
+        "startup_products"
+      ]
+    }
+  },
+  "best_practices": {
+    "title_length": "50-60 characters",
+    "description_length": "120-160 characters",
+    "keywords_count": "15-20 keywords maximum",
+    "image_size": "1200x630 pixels for OG/Twitter",
+    "url_structure": "lowercase, hyphens, descriptive",
+    "meta_freshness": "Update regularly for active job seekers"
+  }
+}

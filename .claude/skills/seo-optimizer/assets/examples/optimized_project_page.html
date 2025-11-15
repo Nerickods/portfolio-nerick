@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Optimization -->
+    <title>Algorithmic Trading Platform - Fintech Project by Sarah Chen | React Developer</title>
+    <meta name="description" content="Real-time algorithmic trading platform built with React and Node.js. Handles 10,000+ concurrent users with sub-second latency. Features advanced charting, order execution, and portfolio management for hedge funds.">
+    <meta name="keywords" content="algorithmic trading platform, react project, fintech application, real-time trading, hedge fund software, websocket, typescript, node.js, financial technology, trading dashboard, portfolio management">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sarahchen.dev/projects/algorithmic-trading-platform">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Algorithmic Trading Platform - Fintech Project by Sarah Chen">
+    <meta property="og:description" content="Real-time algorithmic trading platform built with React and Node.js. Handles 10,000+ concurrent users with sub-second latency for hedge funds.">
+    <meta property="og:url" content="https://sarahchen.dev/projects/algorithmic-trading-platform">
+    <meta property="og:site_name" content="Sarah Chen - Portfolio">
+    <meta property="og:image" content="https://sarahchen.dev/images/projects/trading-platform-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Algorithmic Trading Platform Dashboard - Real-time charts and order management">
+    <meta property="article:section" content="Projects">
+    <meta property="article:tag" content="React, Node.js, TypeScript, Fintech, Trading Platform">
+    <meta property="article:published_time" content="2023-06-15T10:00:00Z">
+    <meta property="article:modified_time" content="2024-01-20T15:30:00Z">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sarahchen_dev">
+    <meta name="twitter:creator" content="@sarahchen_dev">
+    <meta name="twitter:title" content="Algorithmic Trading Platform - React Fintech Project">
+    <meta name="twitter:description" content="Real-time trading platform built with React and Node.js. Handles 10,000+ concurrent users with sub-second latency for hedge funds.">
+    <meta name="twitter:image" content="https://sarahchen.dev/images/projects/trading-platform-og.jpg">
+
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="Sarah Chen">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#317EFB">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Project",
+          "name": "Algorithmic Trading Platform",
+          "description": "Real-time algorithmic trading platform with advanced charting and order execution for hedge funds. Handles 10,000+ concurrent users with sub-second latency.",
+          "url": "https://sarahchen.dev/projects/algorithmic-trading-platform",
+          "codeRepository": "https://github.com/sarahchen/algorithmic-trading-platform",
+          "programmingLanguage": ["React", "TypeScript", "Node.js", "WebSocket", "PostgreSQL"],
+          "dateCreated": "2023-06-15",
+          "dateModified": "2024-01-20",
+          "status": "completed",
+          "creator": {
+            "@type": "Person",
+            "name": "Sarah Chen",
+            "url": "https://sarahchen.dev",
+            "jobTitle": "Senior React Developer"
+          },
+          "keywords": "algorithmic trading, real-time data, react, node.js, fintech, websocket, hedge fund",
+          "about": [
+            "Financial Technology",
+            "Trading Systems",
+            "Real-time Applications",
+            "Data Visualization"
+          ],
+          "award": [
+            "Best Fintech Innovation Award 2023",
+            "Top Performance in Trading Systems"
+          ],
+          "potentialAction": {
+            "@type": "ViewAction",
+            "target": "https://trading-platform-demo.sarahchen.dev",
+            "name": "View Live Demo"
+          }
+        },
+        {
+          "@type": "Article",
+          "headline": "Algorithmic Trading Platform - Real-time Fintech Application",
+          "description": "Case study of a real-time algorithmic trading platform built with React and Node.js for hedge funds.",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah Chen",
+            "url": "https://sarahchen.dev"
+          },
+          "publisher": {
+            "@type": "Person",
+            "name": "Sarah Chen"
+          },
+          "datePublished": "2023-06-15T10:00:00Z",
+          "dateModified": "2024-01-20T15:30:00Z",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://sarahchen.dev/projects/algorithmic-trading-platform"
+          },
+          "image": "https://sarahchen.dev/images/projects/trading-platform-hero.jpg"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Preconnect to External Domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="/" aria-label="Sarah Chen - Home">Sarah Chen</a>
+                </div>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="/about" role="menuitem">About</a>
+                    </li>
+                    <li role="none">
+                        <a href="/projects" role="menuitem" aria-current="page">Projects</a>
+                    </li>
+                    <li role="none">
+                        <a href="/skills" role="menuitem">Skills</a>
+                    </li>
+                    <li role="none">
+                        <a href="/contact" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li aria-current="page">Algorithmic Trading Platform</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Project Hero -->
+        <section class="project-hero" role="banner">
+            <div class="container">
+                <div class="project-hero-content">
+                    <h1>Algorithmic Trading Platform</h1>
+                    <p class="project-hero-subtitle">
+                        Real-time trading platform with advanced charting and order execution for hedge funds
+                    </p>
+
+                    <!-- Project Metadata -->
+                    <div class="project-metadata">
+                        <div class="metadata-item">
+                            <h3>Client</h3>
+                            <p>TechVenture Capital</p>
+                        </div>
+                        <div class="metadata-item">
+                            <h3>Duration</h3>
+                            <p>6 months</p>
+                        </div>
+                        <div class="metadata-item">
+                            <h3>Role</h3>
+                            <p>Lead Frontend Developer</p>
+                        </div>
+                        <div class="metadata-item">
+                            <h3>Live Demo</h3>
+                            <a href="https://trading-platform-demo.sarahchen.dev" target="_blank" rel="noopener noreferrer">
+                                View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Hero Image -->
+                <div class="project-hero-image">
+                    <img
+                        src="/images/projects/trading-platform-hero.webp"
+                        alt="Algorithmic Trading Platform Dashboard - Real-time charts and order management interface"
+                        width="1200"
+                        height="800"
+                        loading="eager"
+                        decoding="async"
+                        importance="high"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        srcset="
+                            /images/projects/trading-platform-hero-400w.webp 400w,
+                            /images/projects/trading-platform-hero-800w.webp 800w,
+                            /images/projects/trading-platform-hero-1200w.webp 1200w
+                        "
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="project-overview" aria-labelledby="overview-heading">
+            <div class="container">
+                <h2 id="overview-heading">Project Overview</h2>
+
+                <div class="overview-content">
+                    <div class="overview-main">
+                        <p>
+                            Built a sophisticated algorithmic trading platform that enables hedge funds to execute trades with sub-second latency. The system handles 10,000+ concurrent users and processes over 1 million transactions per day, providing real-time market data, advanced charting, and automated trading strategies.
+                        </p>
+
+                        <p>
+                            The platform combines cutting-edge frontend technology with robust backend infrastructure to deliver a seamless trading experience. Key features include customizable dashboards, real-time price updates, complex charting tools, and integrated risk management systems.
+                        </p>
+                    </div>
+
+                    <div class="overview-stats">
+                        <h3>Key Metrics</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h4>10,000+</h4>
+                                <p>Concurrent Users</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>&lt;100ms</h4>
+                                <p>Order Execution Latency</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>99.9%</h4>
+                                <p>Uptime SLA</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>$50M+</h4>
+                                <p>Daily Trading Volume</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section class="technical-implementation" aria-labelledby="technical-heading">
+            <div class="container">
+                <h2 id="technical-heading">Technical Implementation</h2>
+
+                <div class="tech-details">
+                    <div class="tech-stack">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-categories">
+                            <div class="tech-category">
+                                <h4>Frontend</h4>
+                                <ul>
+                                    <li>React 18 with TypeScript</li>
+                                    <li>Redux Toolkit for State Management</li>
+                                    <li>Recharts for Data Visualization</li>
+                                    <li>WebSocket for Real-time Updates</li>
+                                    <li>Material-UI for Components</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-category">
+                                <h4>Backend</h4>
+                                <ul>
+                                    <li>Node.js with Express</li>
+                                    <li>Socket.io for WebSocket Communication</li>
+                                    <li>Redis for Caching and Session Management</li>
+                                    <li>PostgreSQL for Transaction Storage</li>
+                                    <li>Docker for Containerization</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-category">
+                                <h4>Infrastructure</h4>
+                                <ul>
+                                    <li>AWS EC2 for Application Servers</li>
+                                    <li>AWS RDS for Database</li>
+                                    <li>AWS ElastiCache for Redis</li>
+                                    <li>Nginx for Load Balancing</li>
+                                    <li>Datadog for Monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-features">
+                        <h3>Key Technical Features</h3>
+
+                        <article class="feature-detail">
+                            <h4>Real-time Data Processing</h4>
+                            <p>
+                                Implemented WebSocket-based architecture for real-time market data streaming,
+                                processing millions of price updates per second with minimal latency using
+                                custom message queuing and data compression algorithms.
+                            </p>
+                            <pre><code>// WebSocket connection for real-time data
+const socket = io('wss://api.tradingplatform.com/realtime');
+socket.on('price_update', (data) => {
+  updateChartWithNewPrice(data);
+});</code></pre>
+                        </article>
+
+                        <article class="feature-detail">
+                            <h4>Advanced Charting Engine</h4>
+                            <p>
+                                Built custom charting components using Recharts and Canvas API to handle
+                                high-frequency data updates, supporting multiple chart types, technical
+                                indicators, and interactive drawing tools.
+                            </p>
+                        </article>
+
+                        <article class="feature-detail">
+                            <h4>Order Management System</h4>
+                            <p>
+                                Developed sophisticated order execution engine with risk management,
+                                position tracking, and automated stop-loss mechanisms integrated with
+                                multiple brokerage APIs.
+                            </p>
+                        </article>
+
+                        <article class="feature-detail">
+                            <h4>Performance Optimization</h4>
+                            <p>
+                                Achieved 60% performance improvement through code splitting, lazy loading,
+                                virtual scrolling for large datasets, and efficient memory management
+                                patterns for long-running sessions.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="challenges-solutions" aria-labelledby="challenges-heading">
+            <div class="container">
+                <h2 id="challenges-heading">Challenges & Solutions</h2>
+
+                <div class="challenges-grid">
+                    <article class="challenge-item">
+                        <h3>Real-time Performance</h3>
+                        <p>
+                            <strong>Challenge:</strong> Processing millions of market data updates per second
+                            while maintaining UI responsiveness and sub-second order execution.
+                        </p>
+                        <p>
+                            <strong>Solution:</strong> Implemented custom WebSocket protocol with message
+                            prioritization, Web Workers for data processing, and efficient React rendering
+                            patterns with memoization and virtualization.
+                        </p>
+                    </article>
+
+                    <article class="challenge-item">
+                        <h3>Data Visualization at Scale</h3>
+                        <p>
+                            <strong>Challenge:</strong> Rendering complex charts with millions of data points
+                            without performance degradation or memory leaks.
+                        </p>
+                        <p>
+                            <strong>Solution:</strong> Built custom canvas-based charting engine with
+                            data sampling algorithms, incremental rendering, and efficient memory management
+                            for large datasets.
+                        </p>
+                    </article>
+
+                    <article class="challenge-item">
+                        <h3>State Management Complexity</h3>
+                        <p>
+                            <strong>Challenge:</strong> Managing complex application state with real-time data
+                            updates, user preferences, and trading strategies.
+                        </p>
+                        <p>
+                            <strong>Solution:</strong> Designed scalable Redux architecture with middleware
+                            for real-time updates, persisted user preferences, and time-travel debugging
+                            for complex trading scenarios.
+                        </p>
+                    </article>
+
+                    <article class="challenge-item">
+                        <h3>Security & Compliance</h3>
+                        <p>
+                            <strong>Challenge:</strong> Meeting strict financial industry security requirements
+                            and regulatory compliance for sensitive trading data.
+                        </p>
+                        <p>
+                            <strong>Solution:</strong> Implemented end-to-end encryption, multi-factor
+                            authentication, audit logging, and compliance with FINRA and SEC regulations
+                            through secure API design.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results & Impact -->
+        <section class="results-impact" aria-labelledby="results-heading">
+            <div class="container">
+                <h2 id="results-heading">Results & Impact</h2>
+
+                <div class="impact-content">
+                    <div class="impact-metrics">
+                        <h3>Business Impact</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <h4>60%</h4>
+                                <p>Performance Improvement</p>
+                            </div>
+                            <div class="metric-item">
+                                <h4>40%</h4>
+                                <p>Reduced Operational Costs</p>
+                            </div>
+                            <div class="metric-item">
+                                <h4>99.9%</h4>
+                                <p>System Uptime Achieved</p>
+                            </div>
+                            <div class="metric-item">
+                                <h4>3x</h4>
+                                <p>Trading Volume Increase</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="impact-testimonials">
+                        <h3>Client Feedback</h3>
+                        <blockquote>
+                            <p>
+                                "Sarah's expertise in React and real-time applications transformed our trading platform.
+                                The system she built handles our high-frequency trading needs with exceptional performance
+                                and reliability. The user interface is intuitive and the technical implementation is rock-solid."
+                            </p>
+                            <cite>
+                                <strong>Michael Rodriguez</strong><br>
+                                CTO, TechVenture Capital
+                            </cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="project-gallery" aria-labelledby="gallery-heading">
+            <div class="container">
+                <h2 id="gallery-heading">Project Screenshots</h2>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img
+                            src="/images/projects/trading-dashboard.webp"
+                            alt="Trading Dashboard with real-time market data and charts"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <figcaption>Main trading dashboard with real-time market data, portfolio overview, and order management interface</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img
+                            src="/images/projects/charting-interface.webp"
+                            alt="Advanced charting interface with technical indicators"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <figcaption>Advanced charting interface with technical indicators, drawing tools, and multi-timeframe analysis</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img
+                            src="/images/projects/order-execution.webp"
+                            alt="Order execution interface with risk management"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <figcaption>Order execution interface with risk management, position tracking, and automated trading strategies</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img
+                            src="/images/projects/mobile-trading.webp"
+                            alt="Mobile responsive trading interface"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <figcaption>Mobile-responsive trading interface with touch-optimized controls for on-the-go trading</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Projects -->
+        <section class="related-projects" aria-labelledby="related-heading">
+            <div class="container">
+                <h2 id="related-heading">Related Projects</h2>
+
+                <div class="related-projects-grid">
+                    <article class="related-project-card">
+                        <img
+                            src="/images/projects/payment-gateway-thumb.webp"
+                            alt="Payment Gateway API Project"
+                            width="400"
+                            height="300"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <div class="related-project-content">
+                            <h3>Payment Gateway API</h3>
+                            <p>Scalable payment processing system handling $50M+ monthly transactions with PCI compliance.</p>
+                            <a href="/projects/payment-gateway" class="btn btn-outline">View Project</a>
+                        </div>
+                    </article>
+
+                    <article class="related-project-card">
+                        <img
+                            src="/images/projects/portfolio-analytics-thumb.webp"
+                            alt="Portfolio Analytics Dashboard"
+                            width="400"
+                            height="300"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <div class="related-project-content">
+                            <h3>Portfolio Analytics Dashboard</h3>
+                            <p>Real-time portfolio analytics with advanced reporting and visualization for wealth management.</p>
+                            <a href="/projects/portfolio-analytics" class="btn btn-outline">View Project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="project-cta" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">Interested in Building Similar Solutions?</h2>
+                <p>
+                    I specialize in building high-performance, real-time web applications for the fintech industry.
+                    Let's discuss how I can help bring your project to life.
+                </p>
+
+                <div class="cta-links">
+                    <a href="/contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://github.com/sarahchen/algorithmic-trading-platform" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                        View Source Code
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sarah Chen</h3>
+                    <p>Senior React Developer specializing in fintech applications and real-time systems.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://github.com/sarahchen" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/sarahchen" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/sarahchen_dev" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/projects">All Projects</a></li>
+                        <li><a href="/skills">Skills</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sarah Chen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js" defer></script>
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>

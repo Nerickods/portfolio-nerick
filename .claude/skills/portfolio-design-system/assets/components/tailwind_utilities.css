@@ -1,0 +1,282 @@
+/* Portfolio Design System - Tailwind CSS Utilities */
+
+/* Component-specific base styles */
+.button-component {
+  /* Base styles are handled by Tailwind classes */
+}
+
+.project-card {
+  /* Grid positioning for consistent layouts */
+  @apply transform-gpu;
+}
+
+.project-card-image {
+  @apply w-full h-48 object-cover;
+}
+
+.project-card-badge {
+  @apply absolute top-4 right-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.project-card-status {
+  @apply absolute top-4 left-4 bg-neutral-900 bg-opacity-75 text-white px-3 py-1 rounded-md text-xs font-medium;
+}
+
+.project-card-title {
+  @apply text-xl font-bold text-neutral-900 dark:text-white mb-2;
+}
+
+.project-card-description {
+  @apply text-neutral-600 dark:text-neutral-300 mb-4 line-clamp-3;
+}
+
+.project-card-tags {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+
+.project-card-tag {
+  @apply inline-flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300;
+}
+
+.project-card-tag-icon {
+  @apply text-xs;
+}
+
+.project-card-actions {
+  @apply flex gap-3 mt-auto;
+}
+
+.project-card-link {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 text-sm;
+}
+
+.project-card-link--primary {
+  @apply bg-primary-600 text-white hover:bg-primary-700;
+}
+
+.project-card-link--secondary {
+  @apply border border-neutral-300 dark:border-neutral-600 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800;
+}
+
+/* Header styles */
+.header-component {
+  backdrop-filter: blur(8px);
+}
+
+.header-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.header-nav {
+  @apply py-4;
+}
+
+.header-logo-link {
+  @apply block focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg;
+}
+
+.header-navigation {
+  @apply flex items-center space-x-1;
+}
+
+.header-nav-link {
+  @apply px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+.header-nav-link--active {
+  @apply text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20;
+}
+
+.header-nav-external-icon {
+  @apply text-xs ml-1 opacity-70;
+}
+
+.header-actions {
+  @apply flex items-center gap-2;
+}
+
+.header-theme-toggle {
+  @apply p-2 rounded-lg text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+.header-theme-icon {
+  @apply block;
+}
+
+.header-theme-icon--dark {
+  @apply dark:hidden;
+}
+
+.header-theme-icon--light {
+  @apply hidden dark:block;
+}
+
+.header-menu-button {
+  @apply sm:hidden p-2 rounded-lg text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+.header-menu-icon {
+  @apply relative w-6 h-6 flex flex-col justify-center items-center;
+}
+
+.header-menu-line {
+  @apply w-5 h-0.5 bg-current transition-all duration-300 absolute;
+}
+
+.header-menu-line:nth-child(1) {
+  @apply -translate-y-2;
+}
+
+.header-menu-line:nth-child(3) {
+  @apply translate-y-2;
+}
+
+.header-menu-button[aria-expanded="true"] .header-menu-line:nth-child(1) {
+  @apply rotate-45 -translate-y-0;
+}
+
+.header-menu-button[aria-expanded="true"] .header-menu-line:nth-child(2) {
+  @apply opacity-0;
+}
+
+.header-menu-button[aria-expanded="true"] .header-menu-line:nth-child(3) {
+  @apply -rotate-45 -translate-y-0;
+}
+
+.header-mobile-menu {
+  @apply sm:hidden mt-4 pt-4 border-t border-neutral-200 dark:border-neutral-700;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.header-mobile-menu--open {
+  max-height: 500px;
+}
+
+.header-navigation--mobile {
+  @apply flex-col space-x-0 space-y-1;
+}
+
+/* Hero styles */
+.hero-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.hero-title {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white mb-6 leading-tight;
+}
+
+.hero-subtitle {
+  @apply text-xl sm:text-2xl text-neutral-600 dark:text-neutral-300 mb-8 leading-relaxed max-w-3xl;
+}
+
+.hero-cta {
+  @apply flex flex-col sm:flex-row gap-4 justify-center sm:justify-start;
+}
+
+.hero-visual-content {
+  @apply flex items-center justify-center;
+}
+
+.hero-visual-placeholder {
+  @apply w-64 h-64 bg-gradient-to-br from-primary-100 to-secondary-100 dark:from-neutral-800 dark:to-neutral-700 rounded-2xl flex items-center justify-center text-6xl;
+}
+
+.hero-background-image {
+  @apply absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20;
+}
+
+.hero-scroll-indicator {
+  @apply absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2 text-neutral-400 dark:text-neutral-500;
+}
+
+.hero-scroll-line {
+  @apply w-px h-8 bg-current;
+}
+
+.hero-scroll-arrow {
+  @apply animate-bounce;
+}
+
+/* Utility classes for line clamping */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* Focus visible utilities */
+.focus-visible:focus-visible {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2 ring-offset-white dark:ring-offset-neutral-900;
+}
+
+/* Screen reader only content */
+.sr-only {
+  @apply sr-only;
+}
+
+/* Pattern backgrounds */
+.bg-pattern {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
+}
+
+/* Loading animations */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Transform utilities for performance */
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive container utilities */
+.container-responsive {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}

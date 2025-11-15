@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{name}",
+  "jobTitle": "{title}",
+  "description": "{description}",
+  "url": "{website_url}",
+  "image": "{profile_image_url}",
+  "email": "{email}",
+  "telephone": "{phone}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{city}",
+    "addressRegion": "{state}",
+    "addressCountry": "{country}"
+  },
+  "sameAs": [
+    "{github_url}",
+    "{linkedin_url}",
+    "{twitter_url}",
+    "{website_url}"
+  ],
+  "knowsAbout": [
+    "{primary_skills}"
+  ],
+  "knowsLanguage": [
+    "English"
+  ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "{university_name}",
+    "sameAs": "{university_url}"
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "description": "{title}",
+    "name": "{title}",
+    "occupationLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{city}"
+      }
+    },
+    "description": "{occupation_description}",
+    "skills": "{skills}"
+  },
+  "seeks": {
+    "@type": "JobPosting",
+    "title": "{title}",
+    "description": "{name} is available for {employment_types} positions",
+    "datePosted": "{availability_date}",
+    "employmentType": ["{employment_types}"],
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Seeking Opportunities"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{city}",
+        "addressRegion": "{state}",
+        "addressCountry": "{country}"
+      }
+    }
+  }
+}

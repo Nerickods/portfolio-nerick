@@ -1,0 +1,196 @@
+{
+  "budgets": [
+    {
+      "name": "initial",
+      "resourceType": "script",
+      "budget": 250,
+      "isWarning": false
+    },
+    {
+      "name": "third-party",
+      "resourceType": "script",
+      "budget": 100,
+      "isWarning": false
+    },
+    {
+      "name": "total",
+      "resourceType": "total",
+      "budget": 1000,
+      "isWarning": false
+    },
+    {
+      "name": "images",
+      "resourceType": "image",
+      "budget": 500,
+      "isWarning": false
+    },
+    {
+      "name": "fonts",
+      "resourceType": "font",
+      "budget": 150,
+      "isWarning": false
+    },
+    {
+      "name": "css",
+      "resourceType": "stylesheet",
+      "budget": 50,
+      "isWarning": false
+    },
+    {
+      "name": "media",
+      "resourceType": "media",
+      "budget": 100,
+      "isWarning": false
+    }
+  ],
+  "resourceCounts": [
+    {
+      "resourceType": "script",
+      "maxCount": 15
+    },
+    {
+      "resourceType": "image",
+      "maxCount": 20
+    },
+    {
+      "resourceType": "font",
+      "maxCount": 4
+    },
+    {
+      "resourceType": "stylesheet",
+      "maxCount": 5
+    }
+  ],
+  "timings": [
+    {
+      "metric": "interactive",
+      "maxBudget": 3000
+    },
+    {
+      "metric": "first-meaningful-paint",
+      "maxBudget": 1500
+    },
+    {
+      "metric": "speed-index",
+      "maxBudget": 1500
+    },
+    {
+      "metric": "largest-contentful-paint",
+      "maxBudget": 2500
+    }
+  ],
+  "coreWebVitals": {
+    "LCP": {
+      "threshold": 2500,
+      "weight": 0.4,
+      "good": "<= 2.5s",
+      "needsImprovement": "> 2.5s and <= 4s",
+      "poor": "> 4s"
+    },
+    "FID": {
+      "threshold": 100,
+      "weight": 0.3,
+      "good": "<= 100ms",
+      "needsImprovement": "> 100ms and <= 300ms",
+      "poor": "> 300ms"
+    },
+    "CLS": {
+      "threshold": 0.1,
+      "weight": 0.3,
+      "good": "<= 0.1",
+      "needsImprovement": "> 0.1 and <= 0.25",
+      "poor": "> 0.25"
+    }
+  },
+  "portfolioSpecific": {
+    "syntaxHighlighting": {
+      "maxSize": 50,
+      "recommendation": "Use lightweight syntax highlighting or code splitting"
+    },
+    "projectScreenshots": {
+      "maxIndividualSize": 100,
+      "maxTotalSize": 500,
+      "recommendation": "Compress images and use WebP/AVIF formats"
+    },
+    "embeds": {
+      "maxLoadTime": 2000,
+      "recommendation": "Lazy load third-party embeds (CodePen, GitHub, etc.)"
+    },
+    "animations": {
+      "maxDuration": 1000,
+      "recommendation": "Keep animations under 1 second for smooth performance"
+    }
+  },
+  "bundleSize": {
+    "maximum": 250,
+    "warning": 200,
+    "individualChunks": {
+      "vendors": 100,
+      "ui": 50,
+      "portfolio": 30,
+      "syntax": 20
+    }
+  },
+  "requestLimits": {
+    "maximumTotal": 50,
+    "warning": 40,
+    "byType": {
+      "scripts": 15,
+      "styles": 5,
+      "images": 20,
+      "fonts": 4,
+      "media": 3,
+      "other": 3
+    }
+  },
+  "cachingStrategy": {
+    "staticAssets": {
+      "maxAge": 31536000,
+      "immutable": true
+    },
+    "images": {
+      "maxAge": 2592000,
+      "immutable": false
+    },
+    "api": {
+      "maxAge": 300,
+      "immutable": false
+    },
+    "html": {
+      "maxAge": 3600,
+      "immutable": false
+    }
+  },
+  "imageOptimization": {
+    "formats": ["avif", "webp", "jpg"],
+    "quality": {
+      "hero": 85,
+      "projects": 80,
+      "thumbnails": 75,
+      "gallery": 82
+    },
+    "responsiveSizes": [320, 640, 768, 1024, 1280, 1536],
+    "compression": {
+      "enabled": true,
+      "level": 6
+    }
+  },
+  "thresholds": {
+    "critical": {
+      "score": 0,
+      "color": "#ff0000"
+    },
+    "warning": {
+      "score": 60,
+      "color": "#ff9900"
+    },
+    "good": {
+      "score": 80,
+      "color": "#00cc00"
+    },
+    "excellent": {
+      "score": 95,
+      "color": "#009900"
+    }
+  }
+}

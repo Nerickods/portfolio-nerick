@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Project",
+  "name": "{project_name}",
+  "description": "{project_description}",
+  "url": "{project_url}",
+  "codeRepository": "{repository_url}",
+  "programmingLanguage": [
+    "{technologies}"
+  ],
+  "startDate": "{start_date}",
+  "endDate": "{end_date}",
+  "status": "{project_status}",
+  "creator": {
+    "@type": "Person",
+    "name": "{developer_name}",
+    "url": "{developer_url}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{developer_name}"
+  },
+  "contributor": {
+    "@type": "Person",
+    "name": "{developer_name}",
+    "roleName": "{role}"
+  },
+  "keywords": "{project_tags}",
+  "about": [
+    "{project_categories}"
+  ],
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "{based_on}",
+    "url": "{based_on_url}"
+  },
+  "award": [
+    "{achievements_and_awards}"
+  ],
+  "license": "{project_license}",
+  "version": "{project_version}",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Person",
+      "name": "{developer_name}"
+    }
+  },
+  "potentialAction": {
+    "@type": "ViewAction",
+    "target": "{project_url}",
+    "name": "View Live Demo"
+  },
+  "subjectOf": {
+    "@type": "Event",
+    "name": "{project_showcase_event}",
+    "startDate": "{event_date}",
+    "location": {
+      "@type": "Place",
+      "name": "{event_location}"
+    }
+  }
+}

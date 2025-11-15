@@ -1,0 +1,166 @@
+{
+  "name": "Light Theme",
+  "personality": "default",
+  "description": "Professional light theme for developer portfolios",
+  "colors": {
+    "primary": [
+      "#eff6ff",
+      "#dbeafe",
+      "#bfdbfe",
+      "#93c5fd",
+      "#60a5fa",
+      "#3b82f6",
+      "#2563eb",
+      "#1d4ed8",
+      "#1e40af",
+      "#1e3a8a"
+    ],
+    "secondary": [
+      "#faf5ff",
+      "#f3e8ff",
+      "#e9d5ff",
+      "#d8b4fe",
+      "#c084fc",
+      "#a855f7",
+      "#9333ea",
+      "#7c3aed",
+      "#6d28d9",
+      "#5b21b6"
+    ],
+    "neutral": [
+      "#ffffff",
+      "#fafafa",
+      "#f5f5f5",
+      "#e5e5e5",
+      "#d4d4d4",
+      "#a3a3a3",
+      "#737373",
+      "#525252",
+      "#404040",
+      "#262626",
+      "#171717",
+      "#0a0a0a"
+    ],
+    "semantic": {
+      "success": [
+        "#f0fdf4",
+        "#dcfce7",
+        "#bbf7d0",
+        "#86efac",
+        "#4ade80",
+        "#22c55e",
+        "#16a34a",
+        "#15803d",
+        "#166534",
+        "#14532d"
+      ],
+      "warning": [
+        "#fffbeb",
+        "#fef3c7",
+        "#fde68a",
+        "#fcd34d",
+        "#fbbf24",
+        "#f59e0b",
+        "#d97706",
+        "#b45309",
+        "#92400e",
+        "#78350f"
+      ],
+      "error": [
+        "#fef2f2",
+        "#fee2e2",
+        "#fecaca",
+        "#fca5a5",
+        "#f87171",
+        "#ef4444",
+        "#dc2626",
+        "#b91c1c",
+        "#991b1b",
+        "#7f1d1d"
+      ],
+      "info": [
+        "#ecfeff",
+        "#cffafe",
+        "#a5f3fc",
+        "#67e8f9",
+        "#22d3ee",
+          "#06b6d4",
+          "#0891b2",
+          "#0e7490",
+          "#155e75",
+          "#164e63"
+      ]
+    },
+    "tech": {
+      "javascript": "#F7DF1E",
+      "typescript": "#3178C6",
+      "react": "#61DAFB",
+      "vue": "#4FC08D",
+      "angular": "#DD0031",
+      "nodejs": "#339933",
+      "python": "#3776AB",
+      "java": "#007396",
+      "cpp": "#00599C",
+      "rust": "#000000",
+      "go": "#00ADD8",
+      "swift": "#FA7343",
+      "kotlin": "#7F52FF",
+      "php": "#777BB4",
+      "ruby": "#CC342D",
+      "docker": "#2496ED",
+      "kubernetes": "#326CE5",
+      "aws": "#FF9900",
+      "azure": "#0078D4",
+      "gcp": "#4285F4",
+      "html": "#E34F26",
+      "css": "#1572B6",
+      "sass": "#CC6699",
+      "webpack": "#8DD6F9",
+      "babel": "#F5DA55",
+      "git": "#F05032",
+      "github": "#181717",
+      "linux": "#FCC624",
+      "ubuntu": "#E95420",
+      "mongodb": "#47A248",
+      "postgresql": "#336791",
+      "mysql": "#4479A1",
+      "redis": "#DC382D",
+      "graphql": "#E10098"
+    }
+  },
+  "typography": {
+    "font_family": {
+      "sans": ["Inter", "system-ui", "sans-serif"],
+      "serif": ["Merriweather", "Georgia", "serif"],
+      "mono": ["JetBrains Mono", "Fira Code", "Consolas", "monospace"]
+    },
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    }
+  },
+  "spacing": {
+    "scale": [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128],
+    "container_max_widths": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    }
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  }
+}

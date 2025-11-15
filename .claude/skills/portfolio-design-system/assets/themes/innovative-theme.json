@@ -1,0 +1,187 @@
+{
+  "name": "Innovative Theme",
+  "personality": "innovative",
+  "description": "Professional theme with a forward-thinking, creative, modern personality",
+  "colors": {
+    "primary": [
+      "#e8effb",
+      "#bccff5",
+      "#8fafef",
+      "#628fe8",
+      "#366fe2",
+      "#1c56c8",
+      "#16429c",
+      "#0f2f6f",
+      "#091c42"
+    ],
+    "secondary": [
+      "#f9f4ea",
+      "#efe0c1",
+      "#e5cc99",
+      "#dbb770",
+      "#d1a347",
+      "#b7892d",
+      "#8e6b23",
+      "#664c19",
+      "#3d2d0f"
+    ],
+    "neutral": [
+      "#ffffff",
+      "#fafafa",
+      "#f5f5f5",
+      "#e5e5e5",
+      "#d4d4d4",
+      "#a3a3a3",
+      "#737373",
+      "#525252",
+      "#404040",
+      "#262626",
+      "#171717",
+      "#0a0a0a"
+    ],
+    "semantic": {
+      "success": [
+        "#e9fbe9",
+        "#bdf3bd",
+        "#92eb92",
+        "#67e467",
+        "#3bdc3b"
+      ],
+      "warning": [
+        "#fbf6e9",
+        "#f3e6bd",
+        "#ebd592",
+        "#e4c467",
+        "#dcb43b"
+      ],
+      "error": [
+        "#fbe9e9",
+        "#f3bdbd",
+        "#eb9292",
+        "#e46767",
+        "#dc3b3b"
+      ],
+      "info": [
+        "#e9f5fb",
+        "#bde1f3",
+        "#92ceeb",
+        "#67bae4",
+        "#3ba7dc"
+      ]
+    },
+    "tech": {
+      "javascript": "#F7DF1E",
+      "typescript": "#3178C6",
+      "react": "#61DAFB",
+      "vue": "#4FC08D",
+      "angular": "#DD0031",
+      "nodejs": "#339933",
+      "python": "#3776AB",
+      "java": "#007396",
+      "cpp": "#00599C",
+      "rust": "#000000",
+      "go": "#00ADD8",
+      "swift": "#FA7343",
+      "kotlin": "#7F52FF",
+      "php": "#777BB4",
+      "ruby": "#CC342D",
+      "docker": "#2496ED",
+      "kubernetes": "#326CE5",
+      "aws": "#FF9900",
+      "azure": "#0078D4",
+      "gcp": "#4285F4",
+      "html": "#E34F26",
+      "css": "#1572B6",
+      "sass": "#CC6699",
+      "webpack": "#8DD6F9",
+      "babel": "#F5DA55",
+      "git": "#F05032",
+      "github": "#181717",
+      "linux": "#FCC624",
+      "ubuntu": "#E95420",
+      "mongodb": "#47A248",
+      "postgresql": "#336791",
+      "mysql": "#4479A1",
+      "redis": "#DC382D",
+      "graphql": "#E10098"
+    }
+  },
+  "typography": {
+    "font_family": {
+      "sans": [
+        "Inter",
+        "system-ui",
+        "sans-serif"
+      ],
+      "serif": [
+        "Merriweather",
+        "Georgia",
+        "serif"
+      ],
+      "mono": [
+        "JetBrains Mono",
+        "Fira Code",
+        "Consolas",
+        "monospace"
+      ]
+    },
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    }
+  },
+  "spacing": {
+    "scale": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64,
+      80,
+      96,
+      128
+    ],
+    "container_max_widths": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    }
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+  "accessibility": {
+    "compliance_level": "AA",
+    "issues": [
+      {
+        "type": "contrast_failure",
+        "foreground": "#1c56c8",
+        "background": "#0a0a0a",
+        "contrast_ratio": 3.03,
+        "required": 4.5
+      }
+    ],
+    "recommendations": [
+      "Adjust contrast between #1c56c8 and #0a0a0a"
+    ]
+  }
+}
